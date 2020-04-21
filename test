@@ -1,0 +1,26 @@
+"""name = request.form.get("name")
+            surname = request.form.get("surname")
+            email = request.form.get("email")
+            address = request.form.get("address")
+            address_2 = request.form.get("address_2")
+            post_code = request.form.get("post_code")
+            quantity = request.form.get("quantity")"""
+
+
+
+            <body>
+    <form action="" method="POST">
+        {{ form.hidden_tag()   }}
+        <input name="name" placeholder="Name" type="text">
+        <input name="surname" placeholder="Surname" type="text">
+        <input name="email" placeholder="E-mail" type="text">
+        <input name="address" placeholder="Street" type="text">
+        <input name="address_2" placeholder="House number" type="text">
+        <input name="post_code" placeholder="Post Code" type="text">
+        <input name="quantity" placeholder="Quantity" type="number">
+        <input type="submit" name="submit_button" value="Register order">
+    </form>
+    <form action="/" method="POST">
+        <input type="submit" name="submit_button" value="Get help">
+    </form>
+</body>

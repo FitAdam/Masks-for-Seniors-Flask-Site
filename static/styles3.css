@@ -1,0 +1,174 @@
+body {
+    font-family:"Montserrat-thin";
+}
+
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 900;
+    color: #fff;
+}
+
+h3 {
+    padding: 5%;
+}
+
+h1,h5 {
+    font-family: 'Ubuntu', sans-serif;
+ 
+}
+
+/*button {
+    -moz-appearance: button;
+    -ms-appearance: button;
+    -o-appearance: button;
+    -webkit-appearance: button;
+    appearance: button;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none;
+    padding: 0.9rem 3.5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #8b4e9b;
+    color: #fff;
+}
+button:hover{
+    background-color: #fff;
+    color: #632972;
+    transition: 0.3s;
+    border: 2px solid white;
+}*/
+a.main {
+    background-color:  #8b4e9b ;
+    color: white;
+    font-family: "Ubuntu";
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    outline: none;
+    margin:0 30%;
+}
+a.main:hover{
+
+    background-color: white;
+    color: #8b4e9b;
+    transition: 0,3s;
+    border: 2px solid white;
+    margin: 0 30%;
+}
+/* Title-section */
+#title {
+    background-image: url("images/Endless-Constellation.svg");
+    color: #fff;
+
+}
+
+.title {
+    color: #fff;
+    line-height: 2;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 0;
+ 
+}
+
+.grands {
+    width: 70%;
+    margin: 15px 80px;
+}
+/* Navigation Bar */
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+ .navbar-brand {
+     font-family:"Ubuntu";
+     font-size: 2.5rem;
+     font-weight: bold;
+     color: #fff;
+ }
+
+
+/*Features section*/
+
+#features {
+    padding: 7% 15%;
+    font-family: 'Playfair Display', serif;
+    color: #1b262c ;
+}
+.feature-box {
+    text-align: center;
+    padding: 5% 0;
+}
+.icon {
+    color:#94d63e;
+    margin-bottom: 1rem;
+}
+.icon:hover {
+    color: #8b4e9b;
+}
+.features-p {
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Carousel section */
+#Carousel-purpose {
+ background-image: url("images/Endless-Constellation\ \(1\).svg");
+text-align: center;
+color: #fff;
+}
+
+.carousel-inner {
+    padding: 7% 15%;
+    
+}
+
+/* Help section */
+    #help {
+    background-color: #fff;
+    color:#856c8b ;
+    font-family: 'Montserrat', sans-serif;
+    padding: 7% 15%;
+    color: #1b262c ;
+}
+.helpus {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #1b262c;
+}
+.mail {
+    font-weight: bold;
+    color:#632972 ;
+}
+.mail-p {
+    position: relative;
+    left: 20%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Footer section */
+ #footer {
+     background-color: #856c8b;
+     text-align: center;
+     }
+     .social-icon {
+        padding: 1%;
+        margin-bottom: 3%;
+        width: 7%;
+     }
+@media (max-width:700px) {
+    .social-icon {
+        padding: 1%;
+        margin-bottom: 3%;
+        width: 10%;
+     }
+}

@@ -1,0 +1,56 @@
+body {
+    background-image: url("images/Endless-Constellation.svg");
+    color: #fff;
+    text-align: center;
+
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+    margin-bottom: 3%;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 30%;
+}
+
+.social-icon {
+    padding: 1%;
+    width: 7%;
+}
+
+/* Navigation Bar */
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+ .navbar-brand {
+     font-family:"Ubuntu";
+     font-size: 2.5rem;
+     font-weight: bold;
+     color: #fff;
+    
+ }
+.title-thanks {
+    color: #fff;
+    line-height: 2;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 0;
+}
+.container-fluid {
+    padding: 3% 15%;
+}
+@media (max-width:700px) {
+    .social-icon {
+        padding: 1%;
+        margin-bottom: 3%;
+        width: 15%;
+     }
+     p {
+        padding: 0 5%; 
+     }
+}
