@@ -4,11 +4,15 @@ from flask_sqlalchemy import SQLAlchemy
 from forms import RegistrationForm
 
 app = Flask(__name__)
-
-
-
 app.config['SECRET_KEY'] = 'b0c363e1be51668250911243a6b1c167'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.sqlite3'
 
+db = SQLAlchemy(app)
+
+class order(db.Model):
+    _id = db.Column("id", db.Integer, primary_key=True)
+    name = db.Column("name", db.String(100))
+    email = db.Column("email", db.String(100))
 
 @app.route("/")
 @app.route("/home")
@@ -19,6 +23,7 @@ def home():
 def register():
         form = RegistrationForm()
         if form.validate_on_submit():
+            
             print(f'We are sending masks for {form.name.data}')
             return redirect(url_for('confirm'))
         return render_template('formularz.html',title='Register',form=form)
