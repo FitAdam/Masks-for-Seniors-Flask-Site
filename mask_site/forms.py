@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm, RecaptchaField
-from wtforms import StringField, IntegerField, SubmitField
+from wtforms import StringField, IntegerField, SubmitField, SelectField
 from wtforms.validators import DataRequired, Length, Email
 
 
@@ -10,6 +10,12 @@ class RegistrationForm(FlaskForm):
     address = StringField('Ulica, numer mieszkania', validators=[DataRequired(),Length(min=2,max=120)])
     address_2 = StringField('Miejscowość', validators=[DataRequired(),Length(min=2,max=120)])
     post_code = StringField('Kod Pocztowy', validators=[DataRequired(),Length(min=2,max=20)])
-    quantity = StringField('Ilość', validators=[DataRequired(),Length(min=1,max=2)])
+    quantity = SelectField('Ilość',[DataRequired()],
+                        choices=[('1', '1'),
+                                 ('2', '2'),
+                                 ('3', '3'),
+                                 ('4', '4'),
+                                 ('5', '5'),
+                                 ('6', '6')])
     recaptcha = RecaptchaField()
     submit = SubmitField('Wyślij')
