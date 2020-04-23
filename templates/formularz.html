@@ -164,24 +164,19 @@
           {{ form.address_2(class="form-control form-control-lg") }}
           {% endif %}
         </div>
+          <!-- CAPTCHA -->
+        <div class="form-group">
+          {{  form.recaptcha }}
+          {% for error in form.recaptcha.errors %}
+            <li style="color: red;">{{ error }}</li>
+          {% endfor %}
+        </div>
       </fieldset>
       <div class="form-group">
         {{ form.submit(class="btn btn-lg btn-outline-light")}}
       </div>
 
     </form>
-
-
-    <!-- CAPTCHA -->
-
-
-    <div class="form-group">
-      <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S"
-        data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-      <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
-      <div class="help-block with-errors"></div>
-    </div>
-
   </div>
 
 
