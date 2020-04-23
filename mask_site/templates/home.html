@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles3.css') }}">
+  <!-- Font icons -->
+  <script src="https://kit.fontawesome.com/bd2f6a8581.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section id="title">
+
+
+    <div class="container-fluid">
+
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="{{ url_for('home') }}">Maska dla seniora</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('home') }}">Strona główna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('register') }}">Formularz</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+
+      <div class="row">
+
+
+        <div class="col-lg-6">
+
+          <h1>Wesprzyj akcje maska dla seniora! </h1>
+
+          <p class="title">Dokładamy najwyższych starań, aby nasze maski były w 100% bezpieczne. Dlatego wykonujemy je
+            ze starannie dobranych materiałów i gwarantujemy sterylne opakowania. </p>
+
+            <a class="main nav-link" href="{{ url_for('register') }}">Formularz</a>
+        </div>
+        <div class="col-lg-6">
+          <image class="grands" src="{{ url_for('static', filename='images/grandparents.png') }}" alt="grands">
+        </div>
+      </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <div class="row">
+
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-check-circle fa-4x"></i>
+        <h3>Zgodne z wytycznymi</h3>
+        <p class="features-p">Spełniają warunki sanepidu.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-heart fa-4x"></i>
+        <h3> Wielokrotnego użytku </h3>
+        <p class="features-p">Zrobione z kieszonką na filtr</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-map-marked fa-4x"></i>
+        <h3>Bezkontaktowa wysyłka</h3>
+        <p class="features-p">Odbierz maskę w paczkomacie</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Carousel section -->
+
+  <section id="Carousel-purpose">
+
+    <div id="Carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#Carousel-purpose" data-slide-to="0" class="active"></li>
+        <li data-target="#Carousel-purpose" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="3000">
+          <h3>Szyjemy maski dla najbardziej potrzebujących oraz domów opieki.</h3>
+          <img src="{{ url_for('static', filename='images/hospital.png') }}" width="100px" height="100px">
+        </div>
+        <div class="carousel-item" data-interval="3000">
+          <h3>Wypełnij formularz, by pomóc nam dostarczyć maski dla potrzebujących!</h3>
+
+          <br>
+          <a class="main nav-link" href="{{ url_for('register') }}">Formularz</a>
+          <br>
+          <br>
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#Carousel-purpose" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#Carousel-purpose" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Pomoc -->
+  <section id="help">
+    <h2 class="helpus">Możesz nam pomóc na 3 sposoby:</h2>
+
+    <div class="row">
+
+
+      <div class="feature-box col-lg-4">
+        <img class="donate" src="{{ url_for('static', filename='images/donate.png') }}" width="100px" height="100px">
+        <h3>Przekazać maseczki</h3>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <img class="help" src="{{ url_for('static', filename='images/help.png') }}" width="100px" height="100px">
+        <h3> Przyłaczyć się do szycia </h3>
+
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <img class="fabric" src="{{ url_for('static', filename='images/fabric.png') }}" width="100px" height="100px">
+        <h3>Zdobyć dla nas materiał</h3>
+        </div>
+      
+      <p class="mail-p">Pytania prosimy kierować na adres: <span class="mail">maskadlaseniora@gmail.com</span></p>
+  
+  </section>
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <div class="container-fluid">
+
+      <img class="social-icon" src="{{ url_for('static', filename='images/facebook.svg') }}">
+      <img class="social-icon" src="{{ url_for('static', filename='images/instagram.svg') }}">
+
+      <p>© Copyright 2020 LocalMask</p>
+
+
+    </div>
+
+
+  </footer>
+
+
+</body>
+
+</html>
