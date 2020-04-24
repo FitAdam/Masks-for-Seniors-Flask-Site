@@ -7,7 +7,7 @@ class email_form(RegistrationForm):
         msg = Message('Nowe zamówienie z Twojej strony', sender = 'maskadlaseniora.serwis@gmail.com',
         recipients=['a.tutakiewicz@gmail.com'] )
         msg.body = f''' 
-        Witaj 
+        Hej
 
         Maska potrzebna dla seniora: 
 

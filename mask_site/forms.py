@@ -5,17 +5,17 @@ from wtforms.validators import DataRequired, Length, Email
 
 class RegistrationForm(FlaskForm):
     name = StringField('Imię', validators=[
-                       DataRequired(), Length(min=2, max=20)])
+                       DataRequired(), Length(min=2, max=30)])
     surname = StringField('Nazwisko', validators=[
-                          DataRequired(), Length(min=2, max=20)])
+                          DataRequired(), Length(min=2, max=30)])
     email = StringField('Email', validators=[
                         DataRequired(), Email(), Length(min=2, max=120)])
     address = StringField('Ulica, numer mieszkania', validators=[
-                          DataRequired(), Length(min=2, max=120)])
+                          DataRequired(), Length(min=2, max=45)])
     address_2 = StringField('Miejscowość', validators=[
-                            DataRequired(), Length(min=2, max=120)])
+                            DataRequired(), Length(min=2, max=45)])
     post_code = StringField('Kod Pocztowy', validators=[
-                            DataRequired(), Length(min=2, max=20)])
+                            DataRequired(), Length(min=2, max=10)])
     quantity = SelectField('Ilość', [DataRequired()],
                         choices=[('1', '1'),
                                  ('2', '2'),
