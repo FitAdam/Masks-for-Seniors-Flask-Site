@@ -1,4 +1,4 @@
-from mask_site import db
+"""from mask_site import db
 from datetime import datetime
 
 class order(db.Model):
@@ -21,4 +21,4 @@ class order(db.Model):
         self.address_2 = address_2
         self.post_code = post_code
         self.quantity = quantity
-        
+        """
