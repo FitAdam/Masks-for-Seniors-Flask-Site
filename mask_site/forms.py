@@ -20,6 +20,8 @@ class RegistrationForm(FlaskForm):
     recaptcha = RecaptchaField()
     submit = SubmitField('Wyślij')
 
+    
+
 #
  #   def validate_email(self, email):
   #      duplicate = dublicate.query.filter_by(email=email.data).first()
