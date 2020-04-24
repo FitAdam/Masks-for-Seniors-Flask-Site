@@ -1,10 +1,16 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail
+from flask_wtf.csrf import CSRFProtect
 import os
 
+
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'b0c363e1be51668250911243a6b1c167'
+
+csrf = CSRFProtect(app)
+csrf.init_app(app)
+WTF_CSRF_SECRET_KEY = 'a random string'
+app.config['SECRET_KEY'] = 'new key'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.sqlite3'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config['RECAPTCHA_USE_SSL']= False
@@ -18,5 +24,7 @@ app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = os.environ.get('EMAIL_USER')
 app.config['MAIL_PASSWORD'] = os.environ.get('EMAIL_PASS')
 mail = Mail(app)
+
+
 
 from mask_site import routes

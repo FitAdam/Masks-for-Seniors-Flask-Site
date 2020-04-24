@@ -3,7 +3,7 @@ from mask_site import app, db
 from mask_site.forms import RegistrationForm
 from mask_site.models import order
 from mask_site.emails import email_form
-
+from flask_wtf.csrf import CSRFError
 
 
 
@@ -34,6 +34,10 @@ def confirm():
 @app.route("/zamowienia")
 def view():
     return render_template("zamowienia.html", values=order.query.all())
+
+@app.errorhandler(CSRFError)
+def handle_csrf_error(e):
+    return render_template('csrf_error.html', reason=e.description), 400
 
 
 

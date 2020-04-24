@@ -5,7 +5,7 @@ from flask_mail import Message
 class email_form(RegistrationForm):
     def send_emails(self):
         msg = Message('Nowe zamówienie z Twojej strony', sender = 'maskadlaseniora.serwis@gmail.com',
-        recipients=['georgelutron335@gmail.com'] )
+        recipients=['a.tutakiewicz@gmail.com'] )
         msg.body = f''' 
         Witaj 
 
