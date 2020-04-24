@@ -19,3 +19,9 @@ class RegistrationForm(FlaskForm):
                                  ('6', '6')])
     recaptcha = RecaptchaField()
     submit = SubmitField('Wyślij')
+
+#
+ #   def validate_email(self, email):
+  #      duplicate = dublicate.query.filter_by(email=email.data).first()
+   #     if user:
+    #        raise ValidationError('That email is taken. Please choose a different one.')
