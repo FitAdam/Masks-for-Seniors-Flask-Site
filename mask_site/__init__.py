@@ -9,8 +9,8 @@ app = Flask(__name__)
 
 csrf = CSRFProtect(app)
 csrf.init_app(app)
-WTF_CSRF_SECRET_KEY = os.environ.get('RC_PRIVATE_KEY')
-app.config['SECRET_KEY'] = 'new key'
+app.config['WTF_CSRF_SECRET_KEY'] = os.environ.get('RC_PRIVATE_KEY')
+app.config['SECRET_KEY'] = os.environ.get('RC_PRIVATE_KEY')
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.sqlite3'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config['RECAPTCHA_USE_SSL']= False
