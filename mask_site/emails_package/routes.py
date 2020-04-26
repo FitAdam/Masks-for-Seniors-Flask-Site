@@ -1,4 +1,4 @@
-from flask import Blueprint, redirect, render_template, request, session, flash, url_for
+from flask import Blueprint, redirect, render_template, request, session, flash, url_for, current_app
 from flask_wtf.csrf import CSRFError
 from mask_site.emails_package.forms import RegistrationForm
 from mask_site.emails_package.emails import email_form
@@ -20,8 +20,3 @@ def register():
         email_form().send_emails()
         return redirect(url_for('main.confirm'))
     return render_template('formularz.html', title='Register', form=form)
-
-@customers.errorhandler(CSRFError)
-def handle_csrf_error(e):
-    return render_template('csrf_error.html', reason=e.description), 400
-

@@ -1,4 +1,5 @@
 from mask_site import mail
+from flask import current_app
 from flask_mail import Message
 from mask_site.emails_package.forms import RegistrationForm
 
