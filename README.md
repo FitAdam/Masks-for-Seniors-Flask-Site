@@ -6,9 +6,9 @@ This website is a Python Flask website for sending a masks for people who are in
 
 1. Activite virtualenv in the project directory
 ```
-mask\Scripts\activate
+.\\mask\Scripts\Activate
 ```
-3. Set up all env variables 
+3. Set up all env variables  or run 'run.py'
 ```
 PS C:\path\to\app> $env:FLASK_APP = "run.py"
 ```
