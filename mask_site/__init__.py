@@ -25,6 +25,10 @@ app.config['MAIL_USERNAME'] = os.environ.get('EMAIL_USER')
 app.config['MAIL_PASSWORD'] = os.environ.get('EMAIL_PASS')
 mail = Mail(app)
 
+from mask_site.main.routes import main
+from mask_site.emails_package.routes import customers
+
+app.register_blueprint(main)
+app.register_blueprint(customers)
 
 
-from mask_site import routes

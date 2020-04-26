@@ -1,6 +1,7 @@
 from mask_site import mail
-from mask_site.forms import RegistrationForm
 from flask_mail import Message
+from mask_site.emails_package.forms import RegistrationForm
+
 
 class email_form(RegistrationForm):
     def send_emails(self):
