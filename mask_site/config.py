@@ -8,7 +8,7 @@ class Config:
     RECAPTCHA_PUBLIC_KEY = os.environ.get('RC_PUBLIC_KEY')
     RECAPTCHA_PRIVATE_KEY =os.environ.get('RC_PRIVATE_KEY')
     RECAPTCHA_DATA_ATTRS = {'theme': 'dark'}
-    WTF_CSRF_SECRET_KEY = os.environ.get('RC_PRIVATE_KEY')
+    WTF_CSRF_SECRET_KEY = os.environ.get('CSRF_KEY)
     SECRET_KEY = os.environ.get('SECRET_KEY')
     #db = SQLAlchemy(app)
     MAIL_SERVER = 'smtp.googlemail.com'
