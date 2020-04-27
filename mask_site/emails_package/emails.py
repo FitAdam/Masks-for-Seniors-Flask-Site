@@ -7,7 +7,7 @@ from mask_site.emails_package.forms import RegistrationForm
 class email_form(RegistrationForm):
     def send_emails(self):
         msg = Message('Nowe zamówienie z Twojej strony', sender = 'maskadlaseniora.serwis@gmail.com',
-        recipients=['maskadlaseniora@gmail.com'] )
+        recipients=['atutakiewicz@gmail.com'] )
         msg.body = f''' 
         Witaj
 
