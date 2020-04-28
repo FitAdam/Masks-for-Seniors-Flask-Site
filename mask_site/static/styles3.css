@@ -177,6 +177,8 @@ color: #fff;
     -o-background-size: cover;
     background-size: 150% auto;
     background-position: center;
-  
+  }
+  .navbar {
+      padding: 0;
   }
 }
