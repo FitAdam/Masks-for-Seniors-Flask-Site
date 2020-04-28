@@ -97,6 +97,9 @@ a.main:hover{
     margin-top: 40px;
     font-family: 'Open Sans', sans-serif;
 }
+.features-p-third {
+    margin-top: 0;
+}
 
 
 /* Carousel section */
