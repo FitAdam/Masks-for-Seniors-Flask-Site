@@ -148,7 +148,7 @@ color: #fff;
         margin-bottom: 3%;
         width: 7%;
      }
-@media screen and (max-width:750px) {
+@media screen and (max-width:700px) {
     .social-icon {
         padding: 1%;
         margin-bottom: 3%;
@@ -169,15 +169,18 @@ color: #fff;
     position: fixed;
   }
   .grands {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     margin: 20px 80px; 
 }
 .container-fluid{
     padding: 3% 10%;
 }
+.features-p{
+    font-size: 20px;
+}
 .title {
-    font-size: 0.5rem;
+    font-size: 16px;
     padding: 20px 100px 20px 0;
     line-height: 0.5rem;
 }
