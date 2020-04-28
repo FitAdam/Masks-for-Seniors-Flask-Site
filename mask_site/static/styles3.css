@@ -48,6 +48,7 @@ a.main:hover{
 
 }
 
+
 .title {
     color: #fff;
     line-height: 2;
@@ -78,7 +79,7 @@ a.main:hover{
 
 #features {
     padding: 7% 15%;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     color: #1b262c ;
 }
 .feature-box {
@@ -96,6 +97,7 @@ a.main:hover{
     margin-top: 40px;
     font-family: 'Open Sans', sans-serif;
 }
+
 
 /* Carousel section */
 #Carousel-purpose {
@@ -144,15 +146,14 @@ color: #fff;
         margin-bottom: 3%;
         width: 7%;
      }
-@media only screen and (max-width:700px) {
+@media screen and (max-width:750px) {
     .social-icon {
         padding: 1%;
         margin-bottom: 3%;
         width: 10%;
      }
      
-    
-  #title {
+    #title {
     background-image: url("images/Endless-Constellation.svg");
     display: block;
     left: 0;
@@ -162,6 +163,17 @@ color: #fff;
     background-size: cover; 
     background-position: center center;
   }
-  
+  h1 {
+      font-size: 2rem;
+  }
 
+  #title {
+    background-image: url("images/Endless-Constellation.svg") no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 150% auto;
+    background-position: center;
+  
+  }
 }
