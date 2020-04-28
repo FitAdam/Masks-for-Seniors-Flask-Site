@@ -53,4 +53,8 @@ p{
      p {
         padding: 0 5%; 
      }
+    body {
+        background-size: cover; 
+        background-position: center center;
+    }
 }

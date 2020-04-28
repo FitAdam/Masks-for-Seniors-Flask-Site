@@ -45,4 +45,20 @@ p{
     margin: 0 15%;
 }
 
-
+@media (max-width: 700px) {
+    h2{
+        font-size: 2rem;
+    }
+    
+    .formularz-text {
+        padding: 3%;
+    }
+    .formularz {
+        margin: 0 3%;
+        padding: 2%;
+    }
+    body {
+        background-size: cover; 
+        background-position: center center;
+    }
+}
