@@ -60,4 +60,13 @@ p{
     h1 {
         font-size: 1.5rem;
     }
+    .navbar {
+        padding: 0;
+        margin: 0;
+        width: 50%;
+    }
+    .navbar-brand{
+        font-size: 2rem;
+    }
+    
 }

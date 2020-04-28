@@ -62,8 +62,12 @@ p{
         background-position: center center;
     }
   .navbar {
-      padding-left: 0;
+      padding: 0;
       margin: 0;
+      width: 50%;
+  }
+  .navbar-brand{
+      font-size: 2rem;
   }
   
 }
