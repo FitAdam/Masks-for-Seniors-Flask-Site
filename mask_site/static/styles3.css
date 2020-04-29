@@ -130,6 +130,14 @@ a.main2{
  background-image: url("images/Endless-Constellation\ \(1\).svg");
 text-align: center;
 color: #fff;
+background-repeat: no-repeat; 
+background-position: center;
+background-attachment: fixed;       
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: auto;
+height:100%;
+width:100%; 
 }
 
 .carousel-inner {
