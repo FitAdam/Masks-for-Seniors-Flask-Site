@@ -1,6 +1,7 @@
 # Mask for senior 
 
 This website is a Python Flask website for sending a masks for people who are in need.
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
 ## Installation
 
