@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Ubuntu&display=swap" rel="stylesheet">
 
@@ -28,6 +31,17 @@
     crossorigin="anonymous"></script>
   <!-- Favicon -->
   <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico')}}">
+  <style>
+    .title {
+     font-size: 1rem;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      .title{
+        font-size: 1.5rem;
+      }
+    }
+    </style>
 </head>
 
 <body>
