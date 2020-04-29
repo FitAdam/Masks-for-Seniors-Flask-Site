@@ -196,14 +196,13 @@ color: #fff;
 }
 
 #Carousel-purpose {
-    background-image: url("images/Endless-Constellation\ \(1\).svg");
+    background-image: url("images/Endless-Constellation\ \(1\).svg") no-repeat center center scroll;
    text-align: center;
-   color: #fff;
     background-repeat: no-repeat; 
     background-position: center;       
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: auto;
     height:100%;
     width:100%;
 }
