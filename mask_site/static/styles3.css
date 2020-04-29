@@ -126,7 +126,7 @@ a.main2{
 
 /* Carousel section */
 #Carousel-purpose {
- background-color: rebeccapurple;
+ background-color:  #8b4e9b;
 text-align: center;
 color: #fff;
 }
@@ -193,6 +193,9 @@ color: #fff;
     background-size: auto;
     height:100%;
     width:100%; 
+  }
+  p {
+      font-size: 20px;
   }
 
 }
