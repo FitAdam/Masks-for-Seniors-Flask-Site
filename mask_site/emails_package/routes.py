@@ -20,3 +20,4 @@ def register():
         email_form().send_emails()
         return redirect(url_for('main.confirm'))
     return render_template('formularz.html', title='Register', form=form)
+ 
