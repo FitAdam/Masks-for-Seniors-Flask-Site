@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles3.css') }}">
+  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="{{ url_for('static', filename='styles3.css') }}" />
+
   <!-- Font icons -->
   <script src="https://kit.fontawesome.com/bd2f6a8581.js" crossorigin="anonymous"></script>
 
@@ -124,7 +126,7 @@
           <h3>Wypełnij formularz, by pomóc nam dostarczyć maski dla potrzebujących!</h3>
 
           <br>
-          <a class="main nav-link" href="{{ url_for('customers.register') }}">Formularz</a>
+          <a class="main2 nav-link" href="{{ url_for('customers.register') }}">Formularz</a>
           <br>
           <br>
         </div>
