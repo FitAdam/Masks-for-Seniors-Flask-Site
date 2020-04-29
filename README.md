@@ -12,7 +12,7 @@
 * Flask_wtf.csrf
 * Flask Blueprint
 * Jinja2
-## Frontend done by @claudmiine
+## Frontend done by [@claudmiine](https://github.com/claudmiine)
 * HTML5
 * CSS3
 * Bootstrap
