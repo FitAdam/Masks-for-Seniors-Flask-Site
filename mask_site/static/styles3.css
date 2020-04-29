@@ -126,7 +126,7 @@ a.main2{
 
 /* Carousel section */
 #Carousel-purpose {
- background-image: url("images/Endless-Constellation\ \(1\).svg");
+ background-color: rebeccapurple;
 text-align: center;
 color: #fff;
 }
@@ -172,7 +172,8 @@ color: #fff;
         width: 7%;
      }
 
-@media screen and (max-width:480px) {
+     @media only screen and (max-width: 600px) {
+
     .social-icon {
         padding: 1%;
         margin-bottom: 3%;
@@ -192,17 +193,6 @@ color: #fff;
     background-size: auto;
     height:100%;
     width:100%; 
-  
-}
+  }
 
-#Carousel-purpose {
-    background-image: url("images/Endless-Constellation\ \(1\).svg") no-repeat center center scroll;
-   text-align: center;
-    background-repeat: no-repeat; 
-    background-position: center;       
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: auto;
-    height:100%;
-    width:100%;
 }
