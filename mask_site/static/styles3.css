@@ -61,8 +61,7 @@ a.main2{
     background-image: url("images/Endless-Constellation.svg");
     color: #fff;
     background-repeat: no-repeat; 
-    background-position: center;
-    background-attachment: fixed;       
+    background-position: center;       
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -130,14 +129,6 @@ a.main2{
  background-image: url("images/Endless-Constellation\ \(1\).svg");
 text-align: center;
 color: #fff;
-background-repeat: no-repeat; 
-background-position: center;
-background-attachment: fixed;       
--moz-background-size: cover;
--o-background-size: cover;
-background-size: auto;
-height:100%;
-width:100%; 
 }
 
 .carousel-inner {
@@ -186,8 +177,7 @@ width:100%;
         padding: 1%;
         margin-bottom: 3%;
         width: 10%;
-        
-
+    
   }
   h1 {
       font-size: 2rem;
@@ -197,28 +187,23 @@ width:100%;
     background-image: url("images/Endless-Constellation.svg") no-repeat center center scroll;
     background-repeat: no-repeat; 
     background-position: center;
-    background-attachment: fixed;       
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: auto;
     height:100%;
     width:100%; 
-  }
-  img.grands {
-    width: 30%;
-    margin: 20px 80px; 
-}
-.container-fluid{
-    padding: 3% 10%;
-}
-.features-p{
-    font-size: 20px;
-}
-.title {
-    font-size: 16px;
-    padding: 20px 100px 20px 0;
-    line-height: 0.5rem;
+  
 }
 
-
+#Carousel-purpose {
+    background-image: url("images/Endless-Constellation\ \(1\).svg");
+   text-align: center;
+   color: #fff;
+    background-repeat: no-repeat; 
+    background-position: center;       
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;
 }
