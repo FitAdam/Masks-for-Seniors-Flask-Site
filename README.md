@@ -8,7 +8,7 @@ This website is a Python Flask website for sending a masks for people who are in
 ```
 .\\mask\Scripts\Activate
 ```
-2. Intall all required packages>
+2. Install all required packages>
 
 ```
 pip3 install -r requirements.txt
