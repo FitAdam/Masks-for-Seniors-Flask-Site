@@ -1,17 +1,25 @@
-# Mask for senior 
+<h1> Masks-for-Seniors-Flask-Site </h1>
 
 This website is a Python Flask website for sending a masks for people who are in need.
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
 ## Installation
 
-1. Activite virtualenv in the project directory
+1. Activite or create virtual env in the project directory
 ```
 .\\mask\Scripts\Activate
 ```
+2. Intall all required packages>
+
+```
+pip3 install -r requirements.txt
+```
+
+
 3. Set up all env variables  or run 'run.py'
+
 ```
 PS C:\path\to\app> $env:FLASK_APP = "run.py"
+
 ```
 4. Go to http://127.0.0.1:5000/
 
