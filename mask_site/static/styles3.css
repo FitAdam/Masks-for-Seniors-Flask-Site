@@ -185,9 +185,8 @@ color: #fff;
   }
 
   #title {
-    background-image: url("images/Endless-Constellation.svg") no-repeat center center scroll;
-    background-repeat: no-repeat; 
-    background-position: center;
+    background-image: url("images/Endless-Constellation.svg") ;
+
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: auto;
