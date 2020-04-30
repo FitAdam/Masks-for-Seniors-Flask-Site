@@ -30,9 +30,14 @@ pip3 install -r requirements.txt
 ```
 
 
-3. Set up all env variables  or run 'run.py'
-
+3. Set up all env variables and run 'run.py'
+    
 ```
+example: 
+os.environ.get('USER')
+```
+```
+flask env:
 PS C:\path\to\app> $env:FLASK_APP = "run.py"
 
 ```
